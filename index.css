@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  height: 100%;
+  top: 3%;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 210%;
+}
+
+.generate {
+  width: 60%;
+  text-align: center;
+}
+
+.result {
+  height: 10%;
+}
