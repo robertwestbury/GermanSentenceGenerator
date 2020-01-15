@@ -15,10 +15,10 @@ const endings = {
   },
   a: {
     nouns: {
-      m: "en",
-      f: "eine",
-      n: "ein",
-      pl: "keine"
+      m: "En",
+      f: "Eine",
+      n: "Ein",
+      pl: "Keine"
     },
     adjectives: {
       m: "er",
