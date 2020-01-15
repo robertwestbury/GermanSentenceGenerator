@@ -93,26 +93,20 @@ const makeSentences = () => {
       let todo = Math.random() > 0.5 ? "the" : "a";
 
       if (todo == "the") {
-        sentance = `${endings.the.nouns[noun.gender]} ${
+        sentance = `${endings.the.nouns[noun.gender]} ${adjective}${endings.the.adjectives[noun.gender]} ${
           noun.noun
-        } ${adjective}${endings.the.adjectives[noun.gender]}`;
-      } else {
-        sentance = `${endings.a.nouns[noun.gender]} ${noun.noun} ${adjective}${
-          endings.a.adjectives[noun.gender]
         }`;
+      } else {
+        sentance = `${endings.a.nouns[noun.gender]} ${adjective}${endings.a.adjectives[noun.gender]} ${noun.noun}`;
       }
     }
 
     if (mode == "the") {
-      sentance = `${endings.the.nouns[noun.gender]} ${noun.noun} ${adjective}${
-        endings.the.adjectives[noun.gender]
-      }`;
+      sentance = `${endings.the.nouns[noun.gender]} ${adjective}${endings.the.adjectives[noun.gender]} ${noun.noun}`;
     }
 
     if (mode == "a") {
-      sentance = `${endings.a.nouns[noun.gender]} ${noun.noun} ${adjective}${
-        endings.a.adjectives[noun.gender]
-      }`;
+      sentance = `${endings.a.nouns[noun.gender]} ${adjective}${endings.a.adjectives[noun.gender]} ${noun.noun}`;
     }
 
     sentences.push(sentance);
